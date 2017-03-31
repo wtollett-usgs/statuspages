@@ -1,0 +1,10 @@
+{ "pages": [
+  {
+	"name": "hc-ll",
+	"timeperiods": {
+	  "1w": 900
+	},
+	"url": "w=900&h=300&n=1&x.0=75&y.0=20&w.0=750&h.0=240&mh.0=900&chCnt.0=1&src.0=hvo_seismic_hypocenters&st.0=STARTTIME&et.0=N&lg.0=true&north.0=%2019.55&south.0=%2019.39&east.0=%20-155.53&west.0=-155.73&plotType.0=map&minMag.0=1.7&maxMag.0=10&minDepth.0=-4&maxDepth.0=&minNPhases.0=0&maxNPhases.0=100&rmk.0=&rk.0=0&minHerr.0=0&maxHerr.0=50&minVerr.0=0&maxVerr.0=50&minRMS.0=0&maxRMS.0=5&maxGap.0=&minStDst.0=&maxStDst.0=&axesOption.0=M&colorOption.0=A&hypowidth.0=100&density.0=F&doLog.0=F&densityBinSize.0=5&cntsAxis.0=C&cntsBin.0=D&plotSeparately.0=false",
+	"filename": "HC-LL-MLSUM.png"
+  }
+]}
