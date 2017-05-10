@@ -7,6 +7,12 @@ import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/**
+ * Representation of configuration for a single chart type.
+ * 
+ * @author Nathan Ducasse, Bill Tollett
+ *
+ */
 public class PageConfig {
 
   private String name;
@@ -29,7 +35,7 @@ public class PageConfig {
 
     // parses JSON object for time periods for given data set.
     JSONObject timePeriodJsonObject = passedJsonObj.getJSONObject("timeperiods");
-    this.timeperiods = (Map) Util.jsonToMap(timePeriodJsonObject);
+    this.timeperiods = (Map) StatusUtil.jsonToMap(timePeriodJsonObject);
 
     if (this.url.contains("CHANNEL")) {
       // throws an exception if JSON file is in format [[...]] and routes to special case.

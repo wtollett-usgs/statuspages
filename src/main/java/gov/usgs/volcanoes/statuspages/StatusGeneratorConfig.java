@@ -8,6 +8,12 @@ import java.util.Scanner;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/**
+ * Representation of the entire config.
+ * 
+ * @author Nathan Ducasse, Bill Tollett
+ *
+ */
 public class StatusGeneratorConfig {
 
   private final Map<String, PageConfig> pageConfigMap;

@@ -9,7 +9,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Util {
+/**
+ * Util functions for StatusPageGenerator program.
+ * 
+ * @author Nathan Ducasse, Bill Tollett
+ *
+ */
+public class StatusUtil {
 
   /**
    * Convert string to j2ksec value.

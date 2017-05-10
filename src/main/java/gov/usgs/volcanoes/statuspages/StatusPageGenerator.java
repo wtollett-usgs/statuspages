@@ -13,6 +13,12 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Main entrypoint for StatusPageGenerator program.
+ * 
+ * @author Nathan Ducasse, Bill Tollett
+ *
+ */
 public class StatusPageGenerator {
 
   private List<SaveChartTask> tasks;
@@ -113,11 +119,16 @@ public class StatusPageGenerator {
    * @param args command-line arguments
    */
   public static void main(String[] args) {
+    if (args.length == 0) {
+      System.out.println("-c Config file");
+			System.out.println("-d Directory to save images to");
+			System.exit(1);
+    }
+    
     // Set up command-line args
     Set<String> keys = new HashSet<String>();
     keys.add("-c");
     keys.add("-d");
-    keys.add("-l");
 
     Arguments cliargs = new Arguments(args, null, keys);
     String confFile = cliargs.get("-c");

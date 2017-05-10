@@ -11,6 +11,12 @@ import java.net.URL;
 import java.net.URLConnection;
 import org.apache.commons.codec.binary.Base64;
 
+/**
+ * Runnable task that creates a chart ever x seconds.
+ * 
+ * @author Nathan Ducasse, Bill Tollett
+ *
+ */
 public class SaveChartTask implements Runnable {
 
   private static String BASEURL = System.getenv("VALVE_URL");
@@ -96,10 +102,10 @@ public class SaveChartTask implements Runnable {
       }
       this.filename = this.filename.replace("CHANNEL_", replacement);
     } else {
-      this.valveUrl = Util.replaceSubstr(this.valveUrl, "CHANNEL", this.channels);
-      this.filename = Util.replaceSubstr(this.filename, "CHANNEL", this.channels);
+      this.valveUrl = StatusUtil.replaceSubstr(this.valveUrl, "CHANNEL", this.channels);
+      this.filename = StatusUtil.replaceSubstr(this.filename, "CHANNEL", this.channels);
     }
-    this.valveUrl = this.valveUrl.replace("STARTTIME", "" + Util.strTime(timePeriod));
+    this.valveUrl = this.valveUrl.replace("STARTTIME", "" + StatusUtil.strTime(timePeriod));
     this.filename = this.filename.replace(".png", "-" + timePeriod + ".png");
   }
 
