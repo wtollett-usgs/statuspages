@@ -1,5 +1,9 @@
+# Eclipse stuff
 .settings/
+.project
+.classpath
 
+# Maven stuff
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -9,4 +13,6 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+
+# General
 .DS_Store
