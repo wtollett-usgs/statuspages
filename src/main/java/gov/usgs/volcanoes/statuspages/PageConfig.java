@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -109,7 +110,7 @@ public class PageConfig {
   }
 
   /**
-   * Find out if this set of images uses multiple channels
+   * Find out if this set of images uses multiple channels.
    * 
    * @return Returns true if channels are in the format [[channel1, channel2, ...]] and false
    *         otherwise

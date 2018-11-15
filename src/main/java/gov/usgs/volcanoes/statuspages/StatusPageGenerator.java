@@ -1,6 +1,7 @@
 package gov.usgs.volcanoes.statuspages;
 
 import gov.usgs.volcanoes.core.legacy.Arguments;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -121,8 +122,8 @@ public class StatusPageGenerator {
   public static void main(String[] args) {
     if (args.length == 0) {
       System.out.println("-c Config file");
-			System.out.println("-d Directory to save images to");
-			System.exit(1);
+      System.out.println("-d Directory to save images to");
+      System.exit(1);
     }
     
     // Set up command-line args
