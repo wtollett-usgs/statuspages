@@ -92,7 +92,7 @@ public class SaveChartTask implements Runnable {
    */
   private void createFilenameAndUrl(String timePeriod) {
     // RSAM channels behave differently
-    if (this.sectionName.equalsIgnoreCase("RSAM")) {
+    if (this.sectionName.equalsIgnoreCase("RSAM") || this.sectionName.contains("seismic")) {
       this.valveUrl = this.valveUrl.replace("CHANNEL", this.channels[0]);
       String[] chSplit = this.channels[0].split("\\$");
       String replacement = "";
