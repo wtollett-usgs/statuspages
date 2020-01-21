@@ -1,2 +1,2 @@
 # StatusPageGenerator
-Generate a series of charts from a [vsc-valve](https://github.com/usgs/vsc-valve) installation.
+This repository has been archived and can now be found at [code.usgs.gov](https://code.usgs.gov/vsc/hvo/status-page-generator)
